@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choreographer.js Discovery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div class="screen main-screen">
+    <div class="title-wrapper">
+      <div class="title-container">
+        <span class="top">What can we do with</span>
+        <span class="main">Choreographer.js</span>
+      </div>
+    </div>
+    <div class="bottom-part">
+      <div class="no-select">PLEASE SCROLL</div>
+      <div class="rotate-90">></div>
+    </div>
+  </div>
+  <div class="screen screen-2">
+    <div class="scene scene-1">
+      <div class="tile tile-1"></div>
+      <div class="tile tile-2">Is</div>
+      <div class="tile tile-3">this</div>
+      <div class="tile tile-4">animated</div>
+      <div class="tile tile-5">scolling ?</div>
+      <div class="tile tile-6"></div>
+    </div>
+    <div class="scene scene-2">
+      <div class="line"></div>
+      <span class="yes">YES !</span>
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="screen screen-3">
+    <div class="scene scene-1">
+      <div class="content-1">
+        <span>There is</span>
+        <div class="data">
+          <span class="first">not only the animated scrolling.</span>
+          <div class="hider"></div>
+          <span class="second hidden">also mouse animations.</span>
+        </div>
+      </div>
+    </div>
+    <div class="scene scene-2">
+      <div class="content-1">
+        <div class="tile tile-1"></div>
+        <div class="tile tile-2"></div>
+      </div>
+    </div>
+  </div>
+  <div class="screen screen-4 finish-screen">
+    <div class="container">
+      <span class="end-text">END</span>
+    </div>
+  </div>
+  <div class="screen screen-5">
+    <span>Created by Marius Van Nieuwenhuyse for {Epitech} (July 2020)</span>
+  </div>
+</body>
+<script>
+  function isBetween(pos, a, b) {
+    if (pos > a && pos < b) return true;
+    if (pos > b && pos < a) return true;
+    return false;
+  }
+</script>
+<script type="module" src="./choreographer/Choreographer.js"></script>
+<script type="module" src="./script.js"></script>
+</html>

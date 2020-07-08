@@ -1,0 +1,207 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Hammersmith One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hammersmith One'), local('HammersmithOne'), url('./HammersmithOne-Regular.ttf') format('woff2');
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+span, p, label, i, .no-select {
+  user-select: none;
+}
+
+
+.screen {
+  height: 100vh;
+}
+
+.screen.main-screen {
+  background-color: #dcdcdc;
+  color: #5a5a5a;
+}
+
+.screen.main-screen .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.screen.main-screen .title-container {
+  text-align: center;
+}
+
+.screen.main-screen .title-container span {
+  display: block;
+}
+
+.screen.main-screen .title-container span.main {
+  font-size: 70px;
+}
+
+.screen.main-screen .bottom-part {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.screen.screen-2 {
+  height: 1500px;
+  background-color: #5a5a5a;
+  color: white;
+}
+
+.screen.screen-2 .scene {
+  width: 100%;
+}
+
+.screen.screen-2 .scene-1 {
+  height: 800px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.screen.screen-2 .scene-1 .tile {
+  height: 200px;
+  width: 200px;
+  background-color: #a0a0a0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 20px;
+  border-radius: 50%;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.36),
+              0 3px 10px rgba(0, 0, 0, 0.26);
+  margin-top: 100px;
+}
+
+.screen.screen-2 .scene-2 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen.screen-2 .scene-2 .yes {
+  font-size: 160px;
+  border: 0px solid white;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.screen.screen-2 .scene-2 .line {
+  height: 30px;
+  width: 70px;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.screen.screen-3 {
+  height: auto;
+}
+
+.screen.screen-3 .scene-1 {
+  height: 400px;
+  background-color: #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen.screen-3 .scene-1 .content-1 {
+  color: #5a5a5a;
+  font-size: 40px;
+}
+
+.screen.screen-3 .data {
+  display: inline-block;
+  position: relative;
+  width: 600px;
+  height: 40px;
+}
+
+.screen.screen-3 .data .first {
+  position: absolute;
+  z-index: 1;
+  margin-top: 4px;
+}
+
+.screen.screen-3 .data .second {
+  position: absolute;
+  z-index: 1;
+  margin-top: 4px;
+}
+
+.screen.screen-3 .data .hider {
+  position: absolute;
+  height: 50px;
+  margin-top: 4px;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  transform-origin: left;
+  transform: scaleX(0);
+  background-color: #5a5a5a;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.screen.screen-3 .scene-2 .content-1 {
+  height: 100vh;
+  background-color: #5a5a5a;
+  overflow: hidden;
+  position: relative;
+}
+
+.screen.screen-3 .scene-2 .content-1 .tile {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: #d0d0d0;
+}
+
+.screen.screen-3 .scene-2 .content-1 .tile-2 {
+  background-color: #979797;
+}
+
+.screen.screen-4 {
+  height: 500px;
+  background-color: #dcdcdc;
+  color: #5a5a5a;
+  position: relative;
+  overflow: hidden;
+}
+
+.screen.screen-4 .container {
+  position: absolute;
+  font-size: 50px;
+}
+
+.screen.screen-5 {
+  height: 40px;
+  font-size: 16px;
+  color: #dcdcdc;
+  background-color: #5a5a5a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rotate-90 {
+  transform: rotate(90deg) scaleY(1.3);
+}

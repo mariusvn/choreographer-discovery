@@ -128,7 +128,7 @@ const setupScene3 = async () => {
     const sceneCh = new Choreographer({
       animations: [
         {
-          range: [[2100, 2300], [2400, 2300]],
+          range: [[2100, 2300], [2400, 2301]],
           selector: '.screen.screen-3 .data .hider',
           type: 'scale',
           style: 'translate:scaleX',
